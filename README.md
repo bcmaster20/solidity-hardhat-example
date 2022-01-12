@@ -91,9 +91,6 @@ export ROPSTEN_PRIVATE_KEY=xxxxx
 npx hardhat run --network ropsten scripts/deploy.ts
 ```
 
-* Greeter contract Deployed on Ropsten
-  - https://ropsten.etherscan.io/tx/0x24cca990a07aa4b5ec5abc4df2d74e34068ed35449561c7617ab799591d32cf2
-
 ## Setup React Dapp
 
 ```bash
