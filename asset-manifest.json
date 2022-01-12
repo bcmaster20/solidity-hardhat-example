@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/solidity-hardhat-example/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/solidity-hardhat-example/static/js/main.3fac3d85.chunk.js",
+    "main.js.map": "/solidity-hardhat-example/static/js/main.3fac3d85.chunk.js.map",
+    "runtime-main.js": "/solidity-hardhat-example/static/js/runtime-main.aa16f9ee.js",
+    "runtime-main.js.map": "/solidity-hardhat-example/static/js/runtime-main.aa16f9ee.js.map",
+    "static/js/2.7e23e2c9.chunk.js": "/solidity-hardhat-example/static/js/2.7e23e2c9.chunk.js",
+    "static/js/2.7e23e2c9.chunk.js.map": "/solidity-hardhat-example/static/js/2.7e23e2c9.chunk.js.map",
+    "static/js/3.fdec7fa1.chunk.js": "/solidity-hardhat-example/static/js/3.fdec7fa1.chunk.js",
+    "static/js/3.fdec7fa1.chunk.js.map": "/solidity-hardhat-example/static/js/3.fdec7fa1.chunk.js.map",
+    "index.html": "/solidity-hardhat-example/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/solidity-hardhat-example/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.7e23e2c9.chunk.js.LICENSE.txt": "/solidity-hardhat-example/static/js/2.7e23e2c9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aa16f9ee.js",
+    "static/js/2.7e23e2c9.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.3fac3d85.chunk.js"
+  ]
+}
