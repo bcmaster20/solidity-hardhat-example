@@ -1,7 +1,5 @@
 # Solidity Hardhat Ethers Dapp Example
 
-Live Demo: https://kenfj.github.io/solidity-hardhat-example/
-
 * Hardhat + Ethers + React + Web3Modal sample Dapp
 * instead of Truffle + Web3
 * using Solidity and TypeScript
