@@ -1,0 +1,37 @@
+name: MasterDeployCI
+
+# Deploy React App to GitHub Pages
+# https://keithweaverca.medium.com/setting-up-github-actions-for-a-react-app-on-github-pages-f66b28c312ac
+# https://stackoverflow.com/questions/62495937/publish-react-app-to-github-pages-using-github-actions
+
+# Official Docs
+# https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context
+# https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./react-dapp
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      # avoid using npm ci https://github.com/actions/setup-node/issues/214
+      - run: npm install
+      - run: npm test
+      - name: deploy gh-pages
+        env:
+          REACT_APP_INFURA_ID: ${{secrets.REACT_APP_INFURA_ID}}
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git remote set-url origin https://${{ github.repository_owner }}:${{ github.token }}@github.com/${{ github.repository }}
+          npm run deploy
